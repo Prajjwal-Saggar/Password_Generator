@@ -154,34 +154,29 @@ html {
   #tick-btn {
     right: 50px;
   }
-  
-
-  /* .content {
-    padding: 25px;
-  } */
 }
 
-@media (min-width:900px){
-    #pass-dis #copy-btn {
-        right: 68px;
-      }
-    
-      #tick-btn {
-        right: 68px;
-      }
-      .card{
-        height: 60%;
-      }
+@media (min-width: 900px) {
+  #pass-dis #copy-btn {
+    right: 68px;
+  }
+
+  #tick-btn {
+    right: 68px;
+  }
+  .card {
+    height: 60%;
+  }
 }
 
-@media(min-width:1280px){
-    #pass-dis #copy-btn {
-        right: 75px;
-      }
-    .content{
-        padding:30px 35px 0px 35px
-    }
-      #tick-btn {
-        right: 75px;
-      }
+@media (min-width: 1280px) {
+  #pass-dis #copy-btn {
+    right: 75px;
+  }
+  .content {
+    padding: 30px 35px 0px 35px;
+  }
+  #tick-btn {
+    right: 75px;
+  }
 }
