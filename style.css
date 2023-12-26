@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #071108;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 68%;
+  height: 50%;
+  background-color: #13ffdfaf;
+  border-radius: 15px;
+}
+
+.card h2 {
+  height: 12%;
+  width: 100%;
+  padding: 10px 0.5px 0px 7px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  border-bottom: 1.5px solid white;
+}
+.content {
+  height: 88%;
+  width: 100%;
+  background-color: rgb(227, 184, 119);
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 15px 10px 15px 5px;
+}
+
+#pass-dis {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#pass-dis input {
+  width: 85%;
+  height: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: white;
+}
+
+#pass-dis #copy-btn {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  color: black;
+  cursor: pointer;
+  display: inline;
+}
+
+#tick-btn {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  color: black;
+  cursor: pointer;
+  display: none;
+  color: #13ffdfaf;
+  font-weight: 600;
+  font-size: large;
+}
+
+#pass-len {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#pass-len input {
+  cursor: pointer;
+}
+
+#display {
+  color: black;
+  font-weight: bold;
+  padding-left: 10px;
+}
+#len-con {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+#pass-set {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#pass-set label {
+  font-weight: bold;
+}
+
+.rows {
+  display: flex;
+  justify-content: space-between;
+}
+
+#generate-btn {
+  display: flex;
+  justify-content: center;
+}
+
+#generate-btn button {
+  padding: 7px 20px;
+  border-radius: 7px;
+  color: black;
+  background-color: #13ffdfaf;
+  border: none;
+  font-weight: bold;
+  box-shadow: 2px 2px 10px black;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+@media (min-width: 700px) {
+  .card h2 {
+    text-align: center;
+  }
+
+  #pass-dis #copy-btn {
+    right: 50px;
+  }
+
+  #tick-btn {
+    right: 50px;
+  }
+  
+
+  /* .content {
+    padding: 25px;
+  } */
+}
+
+@media (min-width:900px){
+    #pass-dis #copy-btn {
+        right: 68px;
+      }
+    
+      #tick-btn {
+        right: 68px;
+      }
+      .card{
+        height: 60%;
+      }
+}
+
+@media(min-width:1280px){
+    #pass-dis #copy-btn {
+        right: 75px;
+      }
+    .content{
+        padding:30px 35px 0px 35px
+    }
+      #tick-btn {
+        right: 75px;
+      }
+}
